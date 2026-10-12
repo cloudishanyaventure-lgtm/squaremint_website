@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#453300","on-tertiary-container":"#c29824","inverse-on-surface":"#eaf3ee","surface-variant":"#dce5df","on-primary-fixed-variant":"#264e43","on-secondary-container":"#207156","background":"#f3fbf6","on-background":"#151d1a","on-surface-variant":"#414845","on-tertiary":"#ffffff","tertiary-fixed":"#ffdf98","on-error":"#ffffff","surface-dim":"#d3dcd7","tertiary-fixed-dim":"#eec14b","tertiary":"#2b1e00","surface-container-lowest":"#ffffff","inverse-surface":"#2a322f","primary":"#00261d","on-tertiary-fixed-variant":"#5a4300","on-primary-fixed":"#002019","surface-tint":"#3e665a","secondary-fixed-dim":"#89d6b5","primary-fixed-dim":"#a5cfc1","error-container":"#ffdad6","outline":"#717975","secondary-container":"#a4f3d0","surface-bright":"#f3fbf6","on-secondary-fixed-variant":"#00513b","primary-fixed":"#c0ecdd","secondary":"#176b50","on-secondary-fixed":"#002116","on-primary-container":"#7da799","surface-container":"#e7f0eb","secondary-fixed":"#a4f3d0","error":"#ba1a1a","on-surface":"#151d1a","surface":"#f3fbf6","on-error-container":"#93000a","on-primary":"#ffffff","outline-variant":"#c0c8c4","primary-container":"#123c32","surface-container-high":"#e2eae5","surface-container-low":"#edf6f0","on-tertiary-fixed":"#251a00","surface-container-highest":"#dce5df","on-secondary":"#ffffff","inverse-primary":"#a5cfc1"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem",margin:"1.25rem",gutter:"1rem","space-md":"1rem","space-lg":"1.25rem","space-xl":"1.5rem"},fontFamily:{"metric-numeral":["Inter"],"headline-sm":["Inter"],"title-md":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"]},fontSize:{"metric-numeral":["20px",{lineHeight:"26px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.02em",fontWeight:"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Brand logo. - Primary color: #123c32
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2JD6gFOsbVUx77akLlar9Jzv19OCSOUxjL04UispygQFn56Q_Fn0Yt_wXyPqFSCq7JNpF3ZDKZGs6aYak9xvvH87fz9K_wKbxJP6FBZ8JqcuAy-UmFN6IRwy_ug1vyEF6V4S07c6-rIiRVTwoPKO6PlczyQAm-Ap2U3pA_Yii1XXxNYuf3-ny6H8oxJB3l8MqoO7rNyE7xX46K2yEWMhk6H26xAzITjo3IgZDiiksQ2c7OxeZc4jTJrs"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NextNest</span></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="buy-property" href="#">Buy Property</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="fractional-ownership" href="#">Fractional Ownership</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="rent-to-own" href="#">Rent-to-Own</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faqs" href="#">FAQs</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center font-title-md text-title-md text-primary hover:text-secondary transition-colors px-space-sm py-space-xs" data-path="login" href="#">Log In</a><a class="hidden sm:inline-flex items-center justify-center h-[44px] px-space-lg rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-primary-container hover:text-on-primary transition-colors shadow-sm" data-path="explore-properties" href="#">Explore Properties</a><div class="hidden sm:flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1ViHWX_u9Q1WxPB25I5SUUOtaqtqoW5nlFHbDSk0zB5YFaqgxENfTkFMnUdxIfHnepoTEBvI-99pWNvLSazyF_Qgpl-J3n2cZlmW914HHLWjaGQP_cIPxoTaHevUiNOSkUeBWcb08iId4Y9sKwL8wG5HEDHeMPz1lm_SmM1jFw6Y-oMdcI0O1bWt-QN2glPyo1TrSBQSOYipgnfvLMo6ZCli8tjaWt0pLOGEplA6IgBC5Bs8fVYFKqUWgw"/></div><button aria-label="Toggle Mobile Menu" class="lg:hidden p-space-xs text-on-surface-variant hover:text-primary flex items-center justify-center" type="button"><span class="material-symbols-outlined">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full -mt-20 pt-28 pb-16 lg:pt-36 lg:pb-24 bg-gradient-to-b from-surface-container-low/70 via-surface to-surface overflow-hidden">
+<!-- Subtle architectural background glow -->
+<div class="absolute -top-32 right-1/4 w-[480px] h-[480px] rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-[360px] h-[360px] rounded-full bg-surface-variant/30 blur-2xl pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Hero Copy -->
+<div class="lg:col-span-7 flex flex-col gap-space-md z-10">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md tracking-wider uppercase font-semibold text-primary">RERA Registered · Institutional SPV Structure</span>
+</div>
+<h1 class="font-headline-lg lg:text-[48px] lg:leading-[56px] text-primary tracking-tight font-bold font-serif">
+            Your next step into <span class="text-secondary italic">real estate.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Find a curated home to buy outright, explore fractional property investments starting at ₹50,000, or discover a structured, transparent path from renting to owning.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-2">
+<a class="inline-flex items-center justify-center h-[52px] px-space-xl rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-primary-container transition-all shadow-md" href="#featured-listings">
+              Explore Properties
+            </a>
+<a class="inline-flex items-center justify-center h-[52px] px-space-xl rounded-xl bg-surface-container text-primary font-title-md text-title-md hover:bg-surface-container-high transition-colors" href="#how-it-works">
+              See How It Works
+            </a>
+</div>
+<!-- Three compact offering labels -->
+<div class="pt-4 flex flex-wrap items-center gap-y-2 gap-x-6 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1.5 font-medium text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+              Buy a home
+            </span>
+<span class="text-outline-variant font-bold">·</span>
+<span class="flex items-center gap-1.5 font-medium text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">pie_chart</span>
+              Invest in a share
+            </span>
+<span class="text-outline-variant font-bold">·</span>
+<span class="flex items-center gap-1.5 font-medium text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">key</span>
+              Work toward ownership
+            </span>
+</div>
+</div>
+<!-- Right Hero Image Framing -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-high aspect-[4/3] lg:aspect-[5/4]">
+<img class="w-full h-full object-cover" data-alt="An expansive modern Indian residential balcony and open-plan living room in Bengaluru, flooded with natural warm daylight through tall glass sliding doors, adorned with lush indoor tropical plants, teak coffee table, bouclé sofa, and panoramic canopy tree views." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV0DI2kYjs_TdMoX2UUIJ55bOHZ84SYB7ximrrCtnVNCI1V4ei-gtONNcBw8OwyXXS6RQlROuFmzEX3qc3-4bJJrsCvgcvM853XEXAnvOlqgs436pmPMFQreM-uqjOCS5Ge2DRzOkadJ2DFfZco2Cvccp2bwmu2PfIQmUp_rbvkKjXvRymP-yUZR0gbtBPT5TUAeyEQid-u35pa2D7ANPF4ak_kFCZhqVsgJAogKJZuzNelwGgDotQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface/90 backdrop-blur-md shadow-lg flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Flagship Bengaluru Asset</p>
+<p class="font-title-md text-title-md text-primary font-semibold">The Courtyard Residences</p>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Grade A</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: THREE WAYS TO GET STARTED -->
+<section class="w-full py-16 bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="max-w-2xl mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Pathways to Property</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">Three distinct ways to participate in premium real estate.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Choose the structure aligned to your personal residency dreams or institutional capital allocation strategy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card A: Buy Property -->
+<div class="flex flex-col rounded-2xl bg-surface p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Modern architectural luxury estate in Whitefield Bengaluru with floor-to-ceiling glass, natural stone finishes, manicured garden path, and private lap pool at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoWy1ExGfGeo5l-_ttuwLdd5iKoBOEMoSnB8uNURfBihj_qmtOj-9MHU5g7vaKK8sZCVT1-NM4ZGCL68Lp07AsyFheodd5X4gIniXa-u5wGP1pi33aDQgh2J7OIx_IZdOyz9mzSvCV6kVkOIqnBMMrp-jkjBiZ4YCnUgeAKrgBlH8Us2I6Ti0dZ8xpUhLCWA5snwjLeJHoo0UWEPH0zW_4HxxIX1FyLS9zkwEM6dfv9C1ue2iAk3CM"/>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Buy Property</h3>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container-high text-on-surface-variant font-medium">Outright</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Acquire 100% freehold or leasehold title in prime vetted Indian developments.</p>
+<ul class="flex flex-col gap-2 mb-6 text-on-surface">
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Full legal title conveyance &amp; direct registered deed</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Curated tier-1 builders with statutory occupancy certificates</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Transparent developer pricing with zero brokerage markups</span>
+</li>
+</ul>
+<div class="mt-auto pt-2">
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-secondary hover:text-primary font-semibold transition-colors" href="#featured-listings" onclick="switchListingTab('buy')">
+              Explore Properties for Sale <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card B: Fractional Ownership -->
+<div class="flex flex-col rounded-2xl bg-surface p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Interior of an ultra-luxury penthouse in Indiranagar Bengaluru with high ceilings, designer cane chairs, marble fireplace, and floor-to-ceiling glass overlooking lush treetops." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeyu5r5ORnaE5Y4UVTiW_R-wgLr31sWdnVeexryURuKspDWdUmxiFYxngKUC294jVef2fOZioaVKTI8JdgOR_FvMIYyomY8V5JqR-2TdDwR8IvrsTDmpQxCyTHNUi1vMNeOvsBYPoBdfT3i62u7wDHTArAf2d_v9NEvn0INA2Hmb3zNCFKd1QRkWuWupYZnOCZW_CXkUB9_HgUGFhDo6FmUeMCf6Zl_OKGGjTQERZ7cW-j3e5tHr9b"/>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Fractional Ownership</h3>
+<span class="px-2 py-0.5 rounded text-xs bg-secondary-container text-on-secondary-container font-medium">Passive Yield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Invest in institutional grade assets split into 100 equal, SPV-backed shares.</p>
+<ul class="flex flex-col gap-2 mb-6 text-on-surface">
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Accessible entry starting from ₹50,000 per share</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>1 share = exactly 1% economic interest in asset SPV</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Quarterly lease rental payout directly to escrow bank account</span>
+</li>
+</ul>
+<div class="mt-auto pt-2">
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-secondary hover:text-primary font-semibold transition-colors" href="#featured-listings" onclick="switchListingTab('fractional')">
+              Discover Fractional Shares <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card C: Rent-to-Own -->
+<div class="flex flex-col rounded-2xl bg-surface p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Warm, sunlit contemporary apartment interior with young professionals seated on a balcony dining table overlooking Bengaluru city tree canopies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBolgbNRdhC3vQqgYZ2Lw77gQj3Ki52fhDq5HSOeqfVq7UfyuJNxngXCdhYHT-XMaxvKOkMDUbn2dUTIdfaLilgF6WpdvwyuovUs3jVCYiimIagjCyb39AqYCVvuU3jDK1iqJXjo3y9VCHyidTFM9XKTz-QFzjnBWKOkLrGI_QVSZfntuQH4gNITzDb0Fy01nwb88-9GF54K5R81RfOOjjoRq_ISGTGehC54n4hiy5qJqa2CEwsOY2"/>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Rent-to-Own</h3>
+<span class="px-2 py-0.5 rounded text-xs bg-tertiary-fixed text-on-tertiary-fixed font-medium">Equity Hybrid</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Move into your desired home now while your monthly rental builds towards title ownership.</p>
+<ul class="flex flex-col gap-2 mb-6 text-on-surface">
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Locked valuation cap guaranteed for the full 36-month tenure</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>100% of agreed monthly payment credited toward purchase equity</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<span>Structured company co-contribution reducing future principal</span>
+</li>
+</ul>
+<div class="mt-auto pt-2">
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-secondary hover:text-primary font-semibold transition-colors" href="#featured-listings" onclick="switchListingTab('rto')">
+              Learn About Rent-to-Own <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Essential Distinction Callout -->
+<div class="mt-8 p-4 rounded-xl bg-surface-container flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary">Important Legal Clarification:</strong> Investing in an SPV fractional property share is a financial investment vehicle providing economic yield, but conveys <span class="underline">no residential occupancy right</span>. Outright purchase and Rent-to-Own provide legal residential occupancy from Day 1.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FEATURED PROPERTIES (TABBED SHOWCASE) -->
+<section class="w-full py-16 bg-surface" id="featured-listings">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Institutional Dealflow</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">Curated Properties</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Illustrative active inventory across Bengaluru and Mumbai micro-markets.</p>
+</div>
+<!-- Segmented Tab Bar -->
+<div class="inline-flex p-1.5 rounded-xl bg-surface-container-high self-start md:self-auto">
+<button class="px-4 py-2 rounded-lg font-title-md text-title-md transition-all bg-surface shadow-sm text-primary font-semibold" id="tab-buy" onclick="switchListingTab('buy')">
+            Buy Outright
+          </button>
+<button class="px-4 py-2 rounded-lg font-title-md text-title-md transition-all text-on-surface-variant hover:text-primary" id="tab-fractional" onclick="switchListingTab('fractional')">
+            Fractional Ownership
+          </button>
+<button class="px-4 py-2 rounded-lg font-title-md text-title-md transition-all text-on-surface-variant hover:text-primary" id="tab-rto" onclick="switchListingTab('rto')">
+            Rent-to-Own
+          </button>
+</div>
+</div>
+<!-- Tab Content: Buy Outright -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="content-buy">
+<!-- Buy Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="Exterior of Verdant Groves Private Estates, a 4 BHK villa with manicured private pool and landscaped palm garden in Whitefield Bengaluru under warm dusk sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_TWG6XH8CMBFx1V9k71oiW1N4QnInvCBXT4G9WFgnAUx0bzY3jc-ost8yodbpO634Lk3jHtvGov2bpiyzFJN05coJglVsLUtmsgYp4ToAFGEwwso2EM-aOVfuTVuvn6SauFvhLJWEKthHsHieSQA66L6E1dI07wmEjdFa3-CgiDrX10KwCYfRHk0QdP-Sv_ikPoxncpVpv1Yh7LEkmyDH8ErtWMOjO1p5fcTYa-lquV7k6XwYVCH"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold">Dec 2025 Possession</span>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-md bg-secondary-container font-label-sm text-label-sm text-on-secondary-container font-semibold">PRM/KA/RERA/1251/446</span>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Verdant Groves Private Estates</h3>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₹5.40 Cr</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Whitefield ECC Road, Bengaluru · 4 BHK Luxury Villa · 4,200 sq.ft</p>
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface mb-6 text-center">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Carpet Area</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">3,650 sq.ft</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">UDS Share</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">48.2%</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Status</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary">Finishing</p>
+</div>
+</div>
+<div class="mt-auto flex items-center gap-3">
+<button class="flex-1 h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-primary-container transition-colors">Schedule Private Site Visit</button>
+<button class="px-4 h-[48px] rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors" title="Download Due Diligence Dossier">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+<!-- Buy Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="Interior living room with massive floor-to-ceiling glass sliding doors opening to expansive forest view canopy in Indiranagar Bengaluru." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZzgdF4ZPr4024U3WzEZJoVziS7i0SMWmrqoUzBl2rLPl0-lAxGrLZtpiYLorSz05MedOOWBNdv4yKbK5IteVjJW36LaBD4hPwDSp6sc-aEkolB3WHmV1BsAKOOI1FW0KwMd7l6C8IGJBcQe9S2uhxKCMgIpie9Mjfgagd0TlN1QEMYODj0pMjjrqNg8WzRwTXeQkEueoLl3oWcuxp6H8um3qpDGs3N0PPS40CSxFdwMj3i__2JbAp"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-secondary font-semibold">Ready to Move</span>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-md bg-secondary-container font-label-sm text-label-sm text-on-secondary-container font-semibold">PRM/KA/RERA/1251/312</span>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">The Courtyard Residences</h3>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₹2.85 Cr</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Indiranagar 100ft Road, Bengaluru · 3 BHK Sky Apartment · 2,150 sq.ft</p>
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface mb-6 text-center">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Carpet Area</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">1,820 sq.ft</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Floor</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">8th of 14</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Title Status</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary">A-Khata</p>
+</div>
+</div>
+<div class="mt-auto flex items-center gap-3">
+<button class="flex-1 h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-primary-container transition-colors">Download Title Report</button>
+<button class="px-4 h-[48px] rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors" title="Download Brochure">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tab Content: Fractional Ownership (Hidden by default) -->
+<div class="hidden grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="content-fractional">
+<!-- Fractional Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="Architectural photograph of a Grade-A Penthouse interior in Indiranagar Bengaluru with modern wooden aesthetics and outdoor green terrace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsHmexQYPA_Z7k_mBopcCwrEJC6lfx05_89YP7Q_wGbat7YMHctm_PfERIZcrRVf7JaYIiPCcAdXRckaLic-sEt72l_ZAFuHQvrdi_KQgub5xX8h1KWJqJ2GGVSMrbdifqluJ2ruZtoST1T1AeHYP7QWXhYUreQ47_MS0bNFNwzCnXYjt4pqIRHrGmhY5nqhoEBiSAYLQe0NZrjQUkk6uZ_Aeq4TcLpiXHsT0APp0o5FXPtOp-o29n"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold">100 SPV Shares Total</span>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-md bg-secondary-container font-label-sm text-label-sm text-on-secondary-container font-semibold">22 Shares Left</span>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">The Palm Terraces Residence</h3>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₹50,000 / share</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">SPV Entity: NextNest Palm Alpha LLP · Indiranagar, Bengaluru</p>
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface mb-3 text-center">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Net Net Yield</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary">8.8% p.a.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Projected 5Y IRR*</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">14.8% p.a.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Min. Entry</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">1 Share</p>
+</div>
+</div>
+<!-- Progress bar -->
+<div class="w-full mb-6">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Funded: 78% (78 / 100 shares)</span>
+<span>₹39,00,000 committed</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<div class="mt-auto">
+<a class="w-full h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md flex items-center justify-center hover:bg-primary-container transition-colors" href="#calculator">
+              Simulate Allocation in Calculator
+            </a>
+</div>
+</div>
+<!-- Fractional Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="Imposing glass curtain-wall office tower in Lower Parel Mumbai against golden sunset light with green urban park in foreground." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSd9IEeOp5JTlV4Y1bJz8eQDUj8WOk_J5mCKU4UAdEF9CNYn7L33zaw6LK3lZtaQ52le48dcAnzhF_3KjkFGBa83LEBDcBJACxhQYHx3c5Hqp5kASKVTihoYSvUXHFiyPXKLbfPnwG4ycLp36DLU_kBvLUGqNvDzxJmuuOkVsTPwQQR6r3hFmvcb9G1k4_naDOUg7wDsQ7baMsurWXNl9MQjTyYJtMi7RxIRzZ2PYq4cxfYwW3cYYP"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold">100 SPV Shares Total</span>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-md bg-secondary-container font-label-sm text-label-sm text-on-secondary-container font-semibold">35 Shares Left</span>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Altamount Horizon Tower</h3>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₹1,50,000 / share</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">SPV Entity: Horizon Commercial Assets LLP · Lower Parel, Mumbai</p>
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface mb-3 text-center">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Net Net Yield</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary">9.2% p.a.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Projected 5Y IRR*</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">15.5% p.a.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tenure</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">5-Yr Lock</p>
+</div>
+</div>
+<!-- Progress bar -->
+<div class="w-full mb-6">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Funded: 65% (65 / 100 shares)</span>
+<span>₹97,50,000 committed</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="mt-auto">
+<a class="w-full h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md flex items-center justify-center hover:bg-primary-container transition-colors" href="#calculator">
+              Simulate Allocation in Calculator
+            </a>
+</div>
+</div>
+</div>
+<!-- Tab Content: Rent-to-Own (Hidden by default) -->
+<div class="hidden grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="content-rto">
+<!-- RTO Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="Interior of Palm Terraces Unit 802 in Bengaluru, warm scandi living room with wide timber plank flooring and large floor plant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFCIuAS_f9hQIjaDYTjgiUNejUDfFXBwFhpmxc55McAE0MkdSewNkj2A0FJh3Un9hEDo9qC4ij_Qzz9e7hL0MrZ9K7ES8xDy2PNoPA03ne_690MvoIRLzPSgCoup70gN_c9jI_OaEbtwKrc_60dsFiZkPocFM5VhjxFHBnXgD9gnTaeUrJZ1MjRUZzzw34ZQHZJGbOwnSFt3UyAZ5-AdCSYxuOGZYKCMRFW69haQbCCA9ULxXI5xoI"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-secondary font-semibold">36-Month Price Lock</span>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-md bg-surface-container-high font-label-sm text-label-sm text-primary font-semibold">Unit 802</span>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Palm Terraces Residence, Unit 802</h3>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₹60,00,000 Cap</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Indiranagar 100ft Road, Bengaluru · 2 BHK Residence</p>
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface mb-6 text-center">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Booking (15%)</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">₹9,00,000</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Your Monthly</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">₹38,000/mo</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">NextNest Co-Pay</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary">₹24,000/mo</p>
+</div>
+</div>
+<div class="mt-auto">
+<a class="w-full h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md flex items-center justify-center hover:bg-primary-container transition-colors" href="#rto-breakdown">
+              Inspect 36-Month Amortization Ledger
+            </a>
+</div>
+</div>
+<!-- RTO Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="Architectural modern villa courtyard with outdoor dining setting and ambient garden lights in Whitefield Bengaluru." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZogWjgadxHuIbk9pipk2Hip5FxCPoiWnddOVotTQyZwSSs0bMCcYAZvgzErWff-gFQvbgE2sgI4uzaC5Hk6ly2K47pYLtXNxfc-vwptDXA6T3XYmEJh1R98sndreCeENUynNiDT5qjftk9TKkUPnTLLF76U_4Kylq8RSqASaTckepr93tf8TnBJobhI0Qa4kUZh_a1uE_7C35p0undecr_FKHmpdsL5spWNVyHxBles91aNq4Hx3v"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-secondary font-semibold">48-Month Price Lock</span>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-md bg-surface-container-high font-label-sm text-label-sm text-primary font-semibold">Villa 12</span>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Verdant Groves Villa 12</h3>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₹1,20,00,000 Cap</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">ECC Road, Whitefield, Bengaluru · 3 BHK Semi-Detached Villa</p>
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface mb-6 text-center">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Booking (20%)</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">₹24,00,000</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Your Monthly</p>
+<p class="font-metric-numeral text-metric-numeral text-primary">₹65,000/mo</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tenure</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary">48 Months</p>
+</div>
+</div>
+<div class="mt-auto">
+<a class="w-full h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md flex items-center justify-center hover:bg-primary-container transition-colors" href="#rto-breakdown">
+              Inspect 48-Month Amortization Ledger
+            </a>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">
+          *Yields and projected IRRs are illustrative mathematical estimates based on current lease agreements and micro-market historical appreciation; they are not guaranteed future cash flows.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FRACTIONAL OWNERSHIP EXPLAINED + INTERACTIVE CALCULATOR -->
+<section class="w-full py-16 bg-surface-container-low" id="calculator">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Explanation Left -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Democratized Real Estate</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">A property. 100 shares. Your chosen stake.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            Each property is held inside a dedicated Special Purpose Vehicle (SPV) and divided into 100 equal investment shares. Each share represents a 1% direct pro-rata economic interest in lease revenue and terminal capital gains.
+          </p>
+<div class="grid grid-cols-2 gap-3 mt-6">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[20px] mb-1">account_balance_wallet</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Income Allocation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rental yields collected in SEBI-regulated escrow and remitted quarterly.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[20px] mb-1">receipt_long</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">CAM &amp; Expenses</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Property tax and maintenance are deducted automatically before net distribution.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[20px] mb-1">assignment_ind</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Ownership Rights</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Class-A pro-rata economic units. Does <span class="font-semibold text-primary">not</span> provide right to reside or occupy.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[20px] mb-1">warning</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Investment Risk</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real estate values fluctuate with market cycles; secondary liquidity is not instant.</p>
+</div>
+</div>
+</div>
+<!-- Interactive Calculator Right -->
+<div class="lg:col-span-7">
+<div class="p-space-lg lg:p-8 rounded-2xl bg-surface-container-lowest shadow-md">
+<div class="flex items-center justify-between pb-4">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Interactive Model</p>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Fractional Investment Simulator</h3>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-semibold text-on-surface">Base Val: ₹50,00,000</span>
+</div>
+<!-- Slider / Stepper Control -->
+<div class="mt-4 p-4 rounded-xl bg-surface">
+<div class="flex items-center justify-between mb-3">
+<label class="font-title-md text-title-md text-primary font-semibold" for="shareSlider">Select Number of Shares</label>
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-primary hover:bg-surface-container-high" onclick="adjustShares(-1)" type="button">-</button>
+<span class="font-metric-numeral text-metric-numeral text-secondary px-3" id="shareCountDisplay">3</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-primary hover:bg-surface-container-high" onclick="adjustShares(1)" type="button">+</button>
+</div>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-secondary" id="shareSlider" max="100" min="1" oninput="updateCalculator(this.value)" type="range" value="3"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mt-1.5">
+<span>1 Share (1%)</span>
+<span>50 Shares (50%)</span>
+<span>100 Shares (100%)</span>
+</div>
+</div>
+<!-- Output Metric Matrix -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 my-6">
+<div class="p-3 rounded-xl bg-surface">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Total Investment</p>
+<p class="font-metric-numeral text-metric-numeral text-primary font-bold" id="totalInvestmentVal">₹1,50,000</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">₹50,000/share base</p>
+</div>
+<div class="p-3 rounded-xl bg-surface">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Economic Interest</p>
+<p class="font-metric-numeral text-metric-numeral text-secondary font-bold" id="economicInterestVal">3.0%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">In asset SPV legal entity</p>
+</div>
+<div class="p-3 rounded-xl bg-surface col-span-2 sm:col-span-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Est. Rental Accrual</p>
+<p class="font-metric-numeral text-metric-numeral text-primary font-bold" id="rentalAccrualVal">₹3,300 / qtr</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">@ 8.8% annualized net</p>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container text-on-surface mb-6">
+<p class="font-label-sm text-label-sm leading-relaxed">
+<span class="font-semibold text-primary">Calculation Notice:</span> ₹50,000 is an illustrative starting tier based on a ₹50,00,000 reference asset. Actual share prices vary from ₹50,000 to ₹1,50,000+ depending on the underlying property's appraised valuation and SPV configuration.
+              </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<a class="flex-1 h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm" href="#registration">
+                Reserve Fractional Allocation
+              </a>
+<button class="px-4 h-[48px] rounded-xl bg-surface-container text-primary font-title-md text-title-md hover:bg-surface-container-high transition-colors">
+                Download SPV Term Sheet
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: FUTURE RESALE MARKETPLACE (PLANNED — PHASE TWO) -->
+<section class="w-full py-16 bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="rounded-3xl bg-surface-container-high/50 p-space-lg lg:p-12 relative overflow-hidden">
+<div class="max-w-2xl mb-8">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+            Planned — Phase Two
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-3 font-serif">Secondary Liquidity for Fractional Investors</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            We are engineering a proprietary secondary transfer window allowing investors to list their SPV shares for resale to registered platform counterparties under compliant SEBI/SPV transfer bylaws.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Mock Listing Preview Card -->
+<div class="lg:col-span-7 rounded-2xl bg-surface-container-lowest p-space-md shadow-md">
+<div class="flex items-center justify-between pb-3 mb-3 border-b-0">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold text-primary uppercase">Simulated Resale Order Desk</span>
+</div>
+<span class="text-xs text-on-surface-variant font-medium">Preview Prototype</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface mb-3 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-semibold">The Palm Terraces Residence</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">SPV: NextNest Palm Alpha LLP · Bangalore</p>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold self-start sm:self-auto">2 Shares Offered</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center p-3 rounded-xl bg-surface mb-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Appraised Asset Val</p>
+<p class="font-title-md text-title-md text-primary font-bold">₹50,00,000</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Seller Asking Price</p>
+<p class="font-title-md text-title-md text-secondary font-bold">₹52,500 / sh</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Last Reference NAV</p>
+<p class="font-title-md text-title-md text-on-surface font-semibold">₹50,000 / sh</p>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>Settlement: 48-Hour Escrow</span>
+<span>Buyer Stamp Transfer: Standard SPV Unit Deed</span>
+</div>
+</div>
+<!-- Disclosures & Realistic Context -->
+<div class="lg:col-span-5 flex flex-col gap-3">
+<div class="p-4 rounded-xl bg-surface-container-lowest">
+<h4 class="font-title-md text-title-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">handshake</span>
+                Counterparty Dependent
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Listing shares will be instantaneous on platform rollout, but executing an exit strictly depends on matching an interested counterparty buyer at the requested bid-ask valuation.
+              </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest">
+<h4 class="font-title-md text-title-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">trending_down</span>
+                Zero Liquidity Guarantee
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                NextNest does not run automated buyback desks or make market prices. Resale valuations are subject to real-time macroeconomic demand and local property appreciation.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: RENT-TO-OWN EXPLAINED & FINANCIAL BREAKDOWN -->
+<section class="w-full py-16 bg-surface-container-lowest" id="rto-breakdown">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="max-w-3xl mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Structured Equity Accumulation</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">A clearer path from renting to owning.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+          Traditional renting leaves you with receipts; outright buying requires heavy immediate capital. Rent-to-Own locks your future purchase valuation on day one and converts 100% of your agreed monthly outlays into credited home equity.
+        </p>
+</div>
+<!-- 6-Step Visual Journey -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 mb-16">
+<div class="p-4 rounded-xl bg-surface flex flex-col justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center mb-3">1</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Choose Home</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Select from our certified Rent-to-Own ready catalog.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface flex flex-col justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center mb-3">2</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Lock Plan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Fix valuation cap and agree on 36 or 48 month tenure.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface flex flex-col justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center mb-3">3</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Pay 10–20%</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Deposit conditional booking into segregated escrow account.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface flex flex-col justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center mb-3">4</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">KYC &amp; Credit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Complete digital verification and underwriting signoff.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface flex flex-col justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center mb-3">5</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Move In</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Reside in the home; monthly payments build credited equity.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface flex flex-col justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center mb-3">6</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Title Transfer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Exercise buyout deed via mortgage or cash settlement.</p>
+</div>
+</div>
+</div>
+<!-- Financial Ledger for ₹60,00,000 Home -->
+<div class="rounded-2xl bg-surface p-space-lg lg:p-8 shadow-sm">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 pb-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Full Transparency Ledger</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Model Financial Structure (₹60,00,000 Residence)</h3>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container font-label-sm text-label-sm font-semibold text-primary">
+<span>Tenure: 36 Months Fixed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Ledger Breakdown Table -->
+<div class="lg:col-span-8 flex flex-col divide-y-0 gap-2">
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<span class="font-body-md text-body-md text-on-surface">Agreed Capped Property Value</span>
+<span class="font-metric-numeral text-metric-numeral text-primary font-semibold">₹60,00,000</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div>
+<p class="font-body-md text-body-md text-on-surface">Upfront Conditional Booking Deposit (15%)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Held in escrow; 100% refundable if underwriting unapproved</p>
+</div>
+<span class="font-metric-numeral text-metric-numeral text-primary font-semibold">₹9,00,000</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div>
+<p class="font-body-md text-body-md text-on-surface">Cumulative Customer Equity Outlay (₹38,000 × 36 Mo)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">100% credited toward purchase principal</p>
+</div>
+<span class="font-metric-numeral text-metric-numeral text-secondary font-semibold">₹13,68,000</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div>
+<p class="font-body-md text-body-md text-on-surface">NextNest Institutional Co-Contribution (₹24,000 × 36 Mo)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Disclosed institutional bridge facility credited to equity</p>
+</div>
+<span class="font-metric-numeral text-metric-numeral text-on-surface font-semibold">₹8,64,000</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-secondary-container text-on-secondary-container">
+<div>
+<p class="font-title-md text-title-md font-bold">Remaining Principal Purchase Balance</p>
+<p class="font-label-sm text-label-sm">Balance required to exercise final title deed registered conveyance</p>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold">₹37,32,000</span>
+</div>
+</div>
+<!-- Summary & Guarantees Box -->
+<div class="lg:col-span-4 p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold mb-2">Consumer Protection Terms</h4>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant mb-4">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>48-Hour 100% refund if KYC fails</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>7-Day statutory cooling-off window</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>Eligible for top Indian bank mortgages</span>
+</li>
+</ul>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+                The ₹24,000/mo company co-contribution represents an institutional mezzanine equity structure recoverable upon title conveyance or authorized buyout.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t-0">
+<a class="w-full h-[48px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md flex items-center justify-center hover:bg-primary-container transition-colors" href="#registration">
+                Check My Pre-Approval Status
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: SIDE-BY-SIDE COMPARISON TABLE -->
+<section class="w-full py-16 bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Clarity Matrix</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">Compare your pathway at a glance.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Evaluate legal rights, capital entry, and operational obligations.</p>
+</div>
+<div class="overflow-x-auto rounded-2xl shadow-sm bg-surface-container-lowest">
+<table class="w-full text-left border-collapse min-w-[720px]">
+<thead>
+<tr class="bg-surface-container">
+<th class="p-4 font-title-md text-title-md text-primary font-semibold w-1/4">Criteria</th>
+<th class="p-4 font-title-md text-title-md text-primary font-semibold w-1/4">Buy Property</th>
+<th class="p-4 font-title-md text-title-md text-secondary font-semibold w-1/4">Fractional Ownership</th>
+<th class="p-4 font-title-md text-title-md text-primary font-semibold w-1/4">Rent-to-Own</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-medium text-primary bg-surface-container-low/50">Primary Goal</td>
+<td class="p-4">Immediate full homeownership</td>
+<td class="p-4 text-secondary font-medium">Wealth building &amp; rental yield</td>
+<td class="p-4">Transition from tenant to owner</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="p-4 font-medium text-primary bg-surface-container-low/50">Upfront Capital</td>
+<td class="p-4">Full price or 20% loan margin</td>
+<td class="p-4 text-secondary font-medium">Starts from ₹50,000 / share</td>
+<td class="p-4">10% to 20% conditional booking</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-medium text-primary bg-surface-container-low/50">Ongoing Payments</td>
+<td class="p-4">Bank EMI, society CAM &amp; municipal taxes</td>
+<td class="p-4 text-secondary font-medium">Zero. CAM deducted from rental yield</td>
+<td class="p-4">Monthly rent-equity payment + maintenance</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="p-4 font-medium text-primary bg-surface-container-low/50">Ability to Occupy</td>
+<td class="p-4 font-medium text-primary">Full unconditional residential right</td>
+<td class="p-4 text-error font-medium">No occupancy rights (financial asset)</td>
+<td class="p-4 font-medium text-primary">Full residential occupancy from Day 1</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-medium text-primary bg-surface-container-low/50">Nature of Ownership</td>
+<td class="p-4">100% legal title registered directly</td>
+<td class="p-4 text-secondary font-medium">Pro-rata economic shares in property SPV</td>
+<td class="p-4">Leasehold with exclusive buyout option</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="p-4 font-medium text-primary bg-surface-container-low/50">Exit Strategy</td>
+<td class="p-4">Direct resale on secondary open market</td>
+<td class="p-4 text-secondary font-medium">Resale desk (Phase Two) / SPV wind-up</td>
+<td class="p-4">Exercise registered purchase deed at Year 3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 8: HOW NEXTNEST WORKS + DASHBOARD PREVIEW -->
+<section class="w-full py-16 bg-surface-container-low" id="how-it-works">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="max-w-2xl mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Institutional Governance</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">How NextNest Works</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">A streamlined 4-stage lifecycle ensuring fiduciary discipline and statutory compliance.</p>
+</div>
+<!-- 4 Stages Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-16">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold mb-3">01</div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Discover Options</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Browse RERA-verified luxury villas, fractional commercial floors, or rent-to-own residences.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">Micro-Market Analytics</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold mb-3">02</div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Audited Diligence</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Inspect title search certificates, structural engineering audits, and SEBI SPV documentation.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">30-Yr Legal Title Scrutiny</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold mb-3">03</div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">DigiLocker KYC</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Complete Aadhaar/PAN instant identity clearance and execute digital tripartite agreements.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">SEBI/RERA Compliant Escrow</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold mb-3">04</div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Track &amp; Grow</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Monitor quarterly lease payouts, fractional NAV indices, or Rent-to-Own accumulated equity credits.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">Unified Resident Portal</span>
+</div>
+</div>
+<!-- Dashboard Preview Component -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-md lg:p-8 shadow-md">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 pb-6">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Product Preview</p>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">NextNest Investor &amp; Resident Portal</h3>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-xs font-medium text-on-surface self-start sm:self-auto">Live Prototype Session</span>
+</div>
+<!-- Dashboard UI Mock -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Stat 1 -->
+<div class="md:col-span-4 p-4 rounded-xl bg-surface">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Active Portfolio Stake</p>
+<p class="font-metric-numeral text-[24px] text-primary font-bold mt-1">₹3,50,000</p>
+<p class="font-label-sm text-label-sm text-secondary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+              +8.8% Annualized Rental Yield
+            </p>
+</div>
+<!-- Stat 2 -->
+<div class="md:col-span-4 p-4 rounded-xl bg-surface">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Rent-to-Own Equity Accrued</p>
+<p class="font-metric-numeral text-[24px] text-primary font-bold mt-1">₹22,32,000</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Target: ₹60,00,000 (37.2% completed)</p>
+</div>
+<!-- Stat 3 -->
+<div class="md:col-span-4 p-4 rounded-xl bg-surface">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Next Escrow Distribution</p>
+<p class="font-metric-numeral text-[24px] text-secondary font-bold mt-1">₹7,700</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Due July 10, 2025 (HDFC Escrow)</p>
+</div>
+<!-- Progress Visualization Mock -->
+<div class="md:col-span-8 p-4 rounded-xl bg-surface">
+<div class="flex justify-between items-center mb-3">
+<h4 class="font-title-md text-title-md text-primary font-semibold">Rent-to-Own Equity Milestones (Unit 802)</h4>
+<span class="text-xs font-semibold text-secondary">Month 18 of 36</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 50%"></div>
+</div>
+<div class="flex justify-between text-xs text-on-surface-variant">
+<span>Booking (₹9.0L)</span>
+<span>Year 1 (₹16.4L)</span>
+<span>Current (₹22.3L)</span>
+<span>Final Target (₹60.0L)</span>
+</div>
+</div>
+<!-- Document Vault Mock -->
+<div class="md:col-span-4 p-4 rounded-xl bg-surface flex flex-col justify-between">
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold mb-2">Encrypted Vault</h4>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-xs p-1.5 rounded bg-surface-container-low">
+<span class="truncate">SPV_Share_Certificate_04.pdf</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">download</span>
+</div>
+<div class="flex items-center justify-between text-xs p-1.5 rounded bg-surface-container-low">
+<span class="truncate">RERA_Title_Verification.pdf</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">download</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-3 py-1.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary font-semibold hover:bg-surface-container-high">View All Documents</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: TRANSPARENCY & DUE DILIGENCE (8-POINT TRUST GRID) -->
+<section class="w-full py-16 bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="max-w-2xl mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Institutional Safeguards</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">The 8-Point Due Diligence Standard</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Every asset on NextNest passes stringent statutory and legal verification protocols.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">gavel</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">1. 30-Year Title Search</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Conducted by top tier Indian law firms confirming clear, marketable, encumbrance-free titles.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">fact_check</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">2. State RERA Filings</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Strict adherence to MahaRERA and Karnataka RERA registration standards and escrow deposit mandates.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">price_check</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">3. Third-Party Valuations</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Appraised independently by registered IBBI / RICS certified international property consultancies.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">corporate_fare</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">4. Legal SPV Governance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Structured as distinct LLPs/Private Limited vehicles protecting shareholder equity independently.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">account_balance</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">5. SEBI Trustee Escrows</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Investor payments flow directly to regulated trustee-managed bank accounts, never corporate operational funds.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">percent</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">6. Zero Hidden Fees</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">No surprise brokerage fees, unlisted exit charges, or undocumented asset management surcharges.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">policy</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">7. Honest Risk Disclosures</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Clear communication regarding property illiquidity, tenant vacancy risks, and general market variance.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2">restart_alt</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold">8. 48-Hour Refund SLA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">100% unconditional refund of earnest booking deposits if KYC or underwriting is unapproved.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 10: FREQUENTLY ASKED QUESTIONS (12 ACCORDIONS) -->
+<section class="w-full py-16 bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="max-w-2xl mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Common Inquiries</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1 font-serif">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Transparent, direct answers regarding legal ownership, resale, and financial models.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Col 1 -->
+<div class="flex flex-col gap-3">
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">What is fractional property ownership?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              Fractional ownership allows multiple individuals to collectively own high-value residential or commercial real estate. An institutional Special Purpose Vehicle (SPV) holds the physical property, and investors own Class-A shares in that entity proportional to their financial contribution.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">What does one share represent?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              Each asset is partitioned into exactly 100 shares. Buying 1 share grants you a 1% direct pro-rata economic entitlement to the property's net rental distributions and 1% of the final net exit capital upon sale.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">Can I live in a property where I own shares?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              No. Fractional ownership is strictly a passive financial investment. It does not convey any residential occupancy, physical access, or vacation stay rights. If you wish to reside in a property, explore our "Buy Outright" or "Rent-to-Own" listings.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">Is every share priced at ₹50,000?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              No. ₹50,000 is our starting baseline tier calculated from a ₹50,00,000 reference asset. The share price is always equal to 1% of the property's audited base acquisition valuation plus statutory incorporation fees (e.g. ₹1,50,000 for a ₹1.5 Cr commercial asset).
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">How are returns calculated?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              Gross lease rents are collected into a dedicated escrow account. Mandatory outlays—including property tax, society CAM, insurance, and asset management—are deducted. The remaining net rental yield is disbursed directly to your bank account each quarter.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">Can property values fall?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              Yes. Like all real asset investments, property values can fluctuate according to micro-market conditions, neighborhood infrastructure shifts, and broader macroeconomic factors. Capital is not guaranteed against loss.
+            </p>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="flex flex-col gap-3">
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">How will resale work?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              In Phase Two, NextNest will offer an internal listing window where fractional owners can post their shares for resale. The platform facilitates buyer-seller matching and digital SPV share transfer execution through authorized trustees.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">What happens if there is no buyer?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              If an individual seller cannot match with a buyer on the secondary window, they must hold their shares until the SPV's pre-scheduled terminal liquidity event (typically a collective sale voted on by shareholders after 5 years). NextNest does not provide automated cash buybacks.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">How is rent-to-own different from renting?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              When renting normally, 100% of your rent is an unrecoverable operational cost. In our Rent-to-Own program, the future purchase price of the property is legally capped for 36 months, and your agreed monthly payments are credited towards your ultimate purchase down payment.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">What does the company's EMI contribution mean?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              NextNest co-finances a portion of the asset's holding structure (e.g. ₹24,000/mo). This is not an unearned gift; it is an institutional bridge contribution credited to purchase equity, which is balanced when you close on the final title deed or execute a registered mortgage.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">What happens if my application is rejected?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              If your underwriting credit evaluation or DigiLocker verification is not approved by our institutional banking partners, your full earnest booking deposit is refunded 100% within 48 business hours with zero deduction.
+            </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-semibold">What fees and documents should I review?</h4>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</div>
+<p class="faq-content hidden font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t-0">
+              We urge every user to download the Title Search Report, RERA Certificate, SPV Operating Agreement, and the Model Purchase Option Deed from our asset pages prior to remitting any conditional deposits.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 11: FINAL CALL TO ACTION & REGISTRATION FORM -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-lowest" id="registration">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Text -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Personalized Onboarding</span>
+<h2 class="font-headline-lg lg:text-[40px] lg:leading-[48px] text-primary font-serif font-bold">
+            Find the property journey that fits you.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Whether you are looking to purchase your dream residence in Bengaluru, start with micro-investments in curated real estate, or build equity while you rent—our advisory desk is ready to assist.
+          </p>
+<div class="flex flex-col gap-3 pt-2 text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span>Zero obligation consultation with certified RERA property advisors</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">shield</span>
+<span>Strict NDNC compliant contact policy: no spam, no cold call loops</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">lock</span>
+<span>DigiLocker encryption and secure SEBI-compliant handling</span>
+</div>
+</div>
+</div>
+<!-- Right Registration Form -->
+<div class="lg:col-span-6">
+<div class="p-space-lg lg:p-8 rounded-2xl bg-surface shadow-md">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-1">Register Your Interest</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Receive curated dossiers for available properties in your metro.</p>
+<form class="flex flex-col gap-4" id="leadForm" onsubmit="handleFormSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1">Full Legal Name</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="e.g. Vikramaditya Rao" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1">Email or Mobile</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="name@domain.com / +91" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1">Preferred City</label>
+<select class="w-full h-[52px] px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary">
+<option value="bengaluru">Bengaluru</option>
+<option value="mumbai">Mumbai</option>
+<option value="delhi-ncr">Delhi NCR</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="pune">Pune</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-2">Interested In (Select all that apply)</label>
+<div class="flex flex-wrap gap-2">
+<label class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="accent-secondary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-primary font-medium">Buy Outright</span>
+</label>
+<label class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="accent-secondary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-primary font-medium">Fractional Shares</span>
+</label>
+<label class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input class="accent-secondary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-primary font-medium">Rent-to-Own</span>
+</label>
+</div>
+</div>
+<div class="flex items-start gap-2 pt-2">
+<input class="accent-secondary w-4 h-4 mt-1" id="consentBox" required="" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-on-surface-variant leading-tight" for="consentBox">
+                  I agree to be contacted by NextNest advisory regarding verified property opportunities and consent to processing of my information under RERA compliance guidelines.
+                </label>
+</div>
+<button class="w-full h-[52px] mt-2 rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center font-semibold" id="submitBtn" type="submit">
+                Register Your Interest
+              </button>
+<div class="hidden p-3 rounded-xl bg-secondary-container text-on-secondary-container font-body-sm text-body-sm text-center" id="formSuccessToast">
+                ✓ Thank you. An institutional advisor will connect with your verified dossier within 4 business hours.
+              </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Tab Switching Logic for Featured Properties
+  function switchListingTab(tabName) {
+    const tabs = ['buy', 'fractional', 'rto'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-' + t);
+      const content = document.getElementById('content-' + t);
+      
+      if (t === tabName) {
+        btn.classList.remove('text-on-surface-variant');
+        btn.classList.add('bg-surface', 'shadow-sm', 'text-primary', 'font-semibold');
+        content.classList.remove('hidden');
+      } else {
+        btn.classList.remove('bg-surface', 'shadow-sm', 'text-primary', 'font-semibold');
+        btn.classList.add('text-on-surface-variant');
+        content.classList.add('hidden');
+      }
+    });
+  }
+
+  // Fractional Ownership Calculator Logic
+  function adjustShares(delta) {
+    const slider = document.getElementById('shareSlider');
+    let val = parseInt(slider.value, 10) + delta;
+    if (val < 1) val = 1;
+    if (val > 100) val = 100;
+    slider.value = val;
+    updateCalculator(val);
+  }
+
+  function updateCalculator(shares) {
+    const shareCount = parseInt(shares, 10);
+    const baseSharePrice = 50000;
+    const annualRentalYieldPercent = 0.088; // 8.8%
+
+    const totalInvestment = shareCount * baseSharePrice;
+    const economicInterest = (shareCount * 1.0).toFixed(1);
+    const quarterlyAccrual = Math.round((totalInvestment * annualRentalYieldPercent) / 4);
+
+    document.getElementById('shareCountDisplay').innerText = shareCount;
+    document.getElementById('totalInvestmentVal').innerText = '₹' + totalInvestment.toLocaleString('en-IN');
+    document.getElementById('economicInterestVal').innerText = economicInterest + '%';
+    document.getElementById('rentalAccrualVal').innerText = '₹' + quarterlyAccrual.toLocaleString('en-IN') + ' / qtr';
+  }
+
+  // Collapsible FAQ Accordion Logic
+  function toggleFaq(card) {
+    const content = card.querySelector('.faq-content');
+    const icon = card.querySelector('.material-symbols-outlined');
+    
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Lead Form Submission Micro-Interaction
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const toast = document.getElementById('formSuccessToast');
+    
+    btn.disabled = true;
+    btn.innerText = 'Securing Allocation...';
+    
+    setTimeout(() => {
+      btn.classList.add('hidden');
+      toast.classList.remove('hidden');
+    }, 600);
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-[1200px] mx-auto px-margin py-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-12"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary tracking-tight">NextNest</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">RERA Verified</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Democratizing prime Indian residential and commercial assets through institutional compliance, fractional ownership equity, and transparent rent-to-own pathways.</p><div class="pt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold block mb-space-xs">Headquarters</span><p class="font-body-sm text-body-sm text-on-surface-variant">Indiranagar 100ft Road, Stage 2<br/>Bengaluru, Karnataka 560038, India<br/>CIN: U70200KA2024PTC184920</p></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Asset Solutions</h3><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-semibold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="buy-property" href="#">Buy Property</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="fractional-ownership" href="#">Fractional Ownership</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="rent-to-own" href="#">Rent-to-Own</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="explore-properties" href="#">Institutional Dealflow</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Platform</h3><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-semibold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About Us</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faqs" href="#">FAQs</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact Desk</a></nav></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Governance &amp; Hubs</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Registered intermediary partner adhering to SEBI Alternative Investment norms and state RERA registration protocols across Bengaluru, Mumbai, and NCR.</p><div class="flex flex-wrap gap-space-xs pt-space-xs"><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Bengaluru</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Mumbai</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Gurugram</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Hyderabad</span></div></div></div><div class="pt-space-lg flex flex-col gap-space-md"><div class="bg-surface-container-high/60 rounded-xl p-space-md"><p class="font-label-sm text-label-sm text-on-surface-variant leading-normal"><span class="font-semibold text-primary">Regulatory Risk Disclosure:</span> Real estate investments, fractional asset stakes, and co-ownership properties involve market risks, liquidity constraints, and valuation fluctuations. Past yield performance is not indicative of future IRR returns. NextNest Proptech Solutions Private Limited operates under strict adherence to state RERA authorities and partner trustee custodians. Investors are advised to read all offer documents, title deeds, and SEBI/SPV disclosures before financial commitment.</p></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 NextNest Proptech Solutions Private Limited. All rights reserved.</p><div class="flex flex-wrap items-center gap-space-md"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="refund-policy" href="#">Refund Information</a></div></div></div></div></footer></body></html>

@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local Wrangler development. Never commit real secrets.
+RESEND_API_KEY=""
+ENQUIRY_TO=""
+ENQUIRY_FROM=""
