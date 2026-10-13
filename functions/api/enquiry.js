@@ -31,7 +31,7 @@ export async function onRequestPost({ request, env }) {
   try {
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST', headers: { 'Authorization': `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' }, signal: AbortSignal.timeout(10000),
-      body: JSON.stringify({ from: env.ENQUIRY_FROM, to: [env.ENQUIRY_TO], reply_to: email, subject: `NextNest enquiry: ${interests[data.interest]}`, text: `Name: ${name}\nEmail: ${email}\nCity: ${data.city}\nInterest: ${interests[data.interest]}\nProperty: ${data.property || 'Not specified'}\nContact consent: provided` })
+      body: JSON.stringify({ from: env.ENQUIRY_FROM, to: [env.ENQUIRY_TO], reply_to: email, subject: `Squaremin enquiry: ${interests[data.interest]}`, text: `Name: ${name}\nEmail: ${email}\nCity: ${data.city}\nInterest: ${interests[data.interest]}\nProperty: ${data.property || 'Not specified'}\nContact consent: provided` })
     });
     if (!response.ok) return json({ error: 'Your enquiry could not be sent. Please try again later or download a copy.' }, 502);
     return json({ ok: true });

@@ -1,4 +1,4 @@
-# NextNest
+# Squaremin
 
 A responsive real-estate website inspired by `website_design_code.txt`. Warm ivory, forest green, architectural imagery, expressive typography, and three clear property pathways.
 
