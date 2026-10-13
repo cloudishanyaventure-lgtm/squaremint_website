@@ -123,3 +123,11 @@ dialog { overscroll-behavior: contain; }
   .button:hover, .pathway-card:hover, .property-card:hover { transform: none; box-shadow: none; }
   .property-card:hover .property-photo img { transform: none; }
 }
+
+/* Let the longer ownership label fit without crowding the location filter. */
+.property-toolbar { flex-wrap: wrap; }
+.segmented { max-width: 100%; }
+.segmented button { white-space: normal; line-height: 1.4; min-width: 0; }
+@media (max-width: 700px) {
+  #properties { padding-top: 28px; }
+}

@@ -14,6 +14,16 @@ const paths = {
 };
 const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${paths[name] || paths.house}</svg>`;
 function hydrateIcons(root = document) { root.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = icon(el.dataset.icon); }); }
+// Keep the reading and keyboard order aligned with the mobile landing layout.
+const mobileLayout = window.matchMedia('(max-width: 700px)');
+const main = document.querySelector('#main');
+const collection = document.querySelector('#properties');
+function updateSectionOrder() {
+  main.insertBefore(collection, document.querySelector(mobileLayout.matches ? '.hero' : '#trusted-dealers'));
+}
+updateSectionOrder();
+mobileLayout.addEventListener('change', updateSectionOrder);
+
 hydrateIcons();
 document.querySelector('#year').textContent = new Date().getFullYear();
 
