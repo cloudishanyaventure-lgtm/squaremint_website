@@ -10,3 +10,116 @@
 .dealers-section{border-bottom:1px solid var(--line)}.dealer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.dealer-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}.dealer-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:23px}.dealer-avatar{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--mint);color:var(--forest);font-family:var(--display);font-size:19px;font-weight:650;flex-shrink:0}.dealer-card h3{font-size:21px;letter-spacing:-.5px}.dealer-agency{font-size:12px;margin-top:5px}.dealer-location{display:flex;align-items:center;gap:6px;font-size:11px;margin-top:18px}.dealer-location .icon{width:15px;height:15px}.dealer-specialty{border-top:1px solid var(--line);margin-top:20px;padding-top:16px}.dealer-specialty p{font-size:12px;margin-top:5px}.dealer-card .pill{color:var(--forest);background:#edf3e7;white-space:nowrap}.footer-nav{flex-wrap:wrap}
 @media(max-width:940px){.dealer-grid{gap:14px}.dealer-card{padding:20px}.dealer-card-top{gap:8px}.dealer-card h3{font-size:19px}}
 @media(max-width:700px){.dealer-grid{grid-template-columns:1fr}.dealer-card{padding:24px}.dealer-card h3{font-size:23px}.dealer-card .pill{font-size:8px}.dealer-agency,.dealer-location,.dealer-specialty p{font-size:13px}}
+
+
+/* Interaction polish: keep motion short and preserve the existing visual language. */
+html { scrollbar-gutter: stable; }
+html.modal-open { overflow: hidden; }
+main, .container > *, .property-grid > *, .dialog-facts > *, .saved-item > div { min-width: 0; }
+button, a, input, select, summary { touch-action: manipulation; }
+button, a { transition: color .18s ease, background-color .18s ease, border-color .18s ease; }
+.button { transition: background .2s ease, transform .2s ease, box-shadow .2s ease; }
+.button:active { transform: translateY(0); box-shadow: none; }
+.desktop-nav a, .text-link, .footer-nav a { min-height: 44px; align-content: center; }
+.desktop-nav a { display: inline-flex; align-items: center; }
+.desktop-nav a:after { bottom: 5px; }
+.icon-button, .save-button, .property-detail-link { min-width: 44px; min-height: 44px; }
+.stepper { height: 44px; }
+.stepper button { width: 44px; height: 44px; }
+.calculator input[type=range] { height: 28px; margin-top: 12px; }
+.share-visual span { transition: background-color .15s ease; }
+.enquiry-form input, .enquiry-form select { transition: border-color .18s ease, box-shadow .18s ease; }
+.enquiry-form input:focus, .enquiry-form select:focus { border-color: var(--green); }
+dialog { overscroll-behavior: contain; }
+.dialog-body, .saved-item { overflow-wrap: anywhere; }
+.saved-item img { flex-shrink: 0; }
+.dialog-close { position: sticky; float: right; margin: 13px 13px -57px 0; }
+.toast { bottom: max(25px, env(safe-area-inset-bottom)); width: max-content; pointer-events: none; }
+@keyframes surface-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: no-preference) {
+  dialog[open], .mobile-nav:not([hidden]), .property-card { animation: surface-in .22s ease-out; }
+  dialog[open]::backdrop { animation: backdrop-in .2s ease-out; }
+}
+@media (max-width: 1050px) {
+  .mobile-nav {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--cream); box-shadow: 0 16px 24px #173d3112;
+    max-height: calc(100dvh - 88px); overflow-y: auto; overscroll-behavior: contain;
+    padding: 12px max(24px, calc((100% - 1240px) / 2)) 20px;
+  }
+  .mobile-nav a { min-height: 48px; border-radius: 6px; padding-inline: 12px; }
+  .mobile-nav a:hover, .mobile-nav a:focus-visible { background: #eaf0e2; }
+  .enquiry-form input:not([type=radio]):not([type=checkbox]), .enquiry-form select { font-size: 16px; }
+  .footer-top { flex-wrap: wrap; }
+  .footer-nav { row-gap: 4px; }
+}
+@media (min-width: 701px) and (max-width: 940px) {
+  .property-grid, .dealer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .property-info { padding: 20px; }
+  .property-info h3 { font-size: 18px; }
+  .property-specs { font-size: 11px; flex-wrap: wrap; }
+  .property-location { font-size: 10px; }
+  .property-price { font-size: 21px; }
+  .fractional-section, .contact-inner { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .calculator, .enquiry-form { width: 100%; max-width: 600px; justify-self: center; }
+  .fractional-copy > p { max-width: 560px; }
+  .fractional-points p { max-width: 500px; }
+  .contact-copy h2 br { display: none; }
+  .contact-flower { right: 30px; }
+  .pathway-top { flex-wrap: wrap; gap: 12px; }
+}
+@media (max-width: 700px) {
+  html { scroll-padding-top: 86px; }
+  .header-cta { display: none; }
+  .header-actions { gap: 4px; }
+  .mobile-nav { max-height: calc(100dvh - 70px); padding-bottom: max(20px, env(safe-area-inset-bottom)); }
+  .hero-actions { flex-wrap: wrap; gap: 12px 20px; }
+  .hero-actions .button { font-size: 12px; }
+  .hero-actions .text-link { font-size: 11px; }
+  .hero-visual { min-height: 320px; }
+  .hero-property { gap: 12px; }
+  .hero-property > div { min-width: 0; }
+  .hero-property strong { font-size: clamp(14px, 4vw, 20px); }
+  .circle-arrow { flex-shrink: 0; }
+  .hero-stamp { right: 8px; top: 55px; }
+  .segmented { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; }
+  .segmented button { min-height: 44px; font-size: 12px; padding: 10px 6px; }
+  .city-filter { align-self: stretch; justify-content: flex-end; }
+  .city-filter select { min-height: 44px; font-size: 16px; padding-right: 28px; }
+  .property-specs { flex-wrap: wrap; gap: 8px 18px; }
+  .collection-bottom { flex-wrap: wrap; gap: 4px 16px; }
+  .collection-bottom .text-link { font-size: 12px; }
+  .interest-options { flex-wrap: wrap; }
+  .enquiry-form .interest-options label { flex: 1 1 100px; }
+  .interest-options span { font-size: 11px; min-height: 44px; display: grid; place-items: center; padding: 10px 6px; }
+  .consent { font-size: 12px; gap: 10px; }
+  .consent input { width: 18px; height: 18px; }
+  .footer-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); font-size: 12px; }
+  .footer-bottom { flex-wrap: wrap; }
+  .footer-bottom button { min-height: 44px; min-width: 44px; font-size: 11px; }
+  dialog { width: calc(100% - 24px); max-height: calc(100dvh - 24px); }
+  .dialog-image { height: clamp(170px, 52vw, 260px); }
+  .dialog-body { padding: 24px 20px max(24px, env(safe-area-inset-bottom)); }
+  .dialog-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; }
+  .saved-item { gap: 12px; }
+  .saved-item img { width: 64px; height: 64px; }
+}
+@media (max-width: 380px) {
+  .container { width: calc(100% - 32px); }
+  .hero h1 { font-size: 44px; }
+  .hero-caption { flex-wrap: wrap; gap: 10px; }
+  .hero-property { padding: 14px; left: 12px; right: 12px; }
+  .calculator { padding: 22px 18px; }
+  .share-label { flex-wrap: wrap; gap: 10px; }
+  .calculator-metrics { gap: 10px; }
+  .calculator-metrics > div > span { font-size: 9px; }
+  .enquiry-form { padding-inline: 18px; }
+}
+@media (hover: none) {
+  .button:hover, .pathway-card:hover, .property-card:hover { transform: none; box-shadow: none; }
+  .property-card:hover .property-photo img { transform: none; }
+}

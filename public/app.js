@@ -79,11 +79,19 @@ document.querySelector('#show-more').addEventListener('click', () => { expanded 
 let dialogOpener;
 function openDialog(content) {
   if (!dialog.open) dialogOpener = document.activeElement;
+  closeMenu();
   dialogContent.innerHTML = content;
   if (!dialog.open) dialog.showModal();
-  dialog.scrollTop = 0; document.body.classList.add('modal-open');
+  dialog.scrollTop = 0; document.documentElement.classList.add('modal-open'); document.body.classList.add('modal-open');
 }
-dialog.addEventListener('close', () => { document.body.classList.remove('modal-open'); dialogOpener?.focus({ preventScroll: true }); });
+dialog.addEventListener('close', () => {
+  document.documentElement.classList.remove('modal-open');
+  document.body.classList.remove('modal-open');
+  // Do not steal focus from the enquiry form after a dialog handoff.
+  if (document.activeElement === document.body || dialog.contains(document.activeElement)) {
+    dialogOpener?.focus({ preventScroll: true });
+  }
+});
 document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
 function openProperty(id) {
@@ -114,7 +122,7 @@ document.addEventListener('click', event => {
     document.querySelector('#enquiry-property').value = property.name;
     document.querySelector(`#enquiry-form input[value="${property.type}"]`).checked = true;
     document.querySelector('#city').value = property.city;
-    dialog.close(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    dialog.close(); document.querySelector('#contact').scrollIntoView({ behavior: 'auto' });
     document.querySelector('#name').focus({ preventScroll: true });
   }
   const interest = event.target.closest('[data-interest]');
@@ -134,8 +142,14 @@ const mobileNav = document.querySelector('#mobile-nav');
 function closeMenu() { mobileNav.hidden = true; menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Open navigation'); menuButton.innerHTML = icon('menu'); }
 menuButton.addEventListener('click', () => { const isOpen = menuButton.getAttribute('aria-expanded') === 'true'; if (isOpen) closeMenu(); else { mobileNav.hidden = false; menuButton.setAttribute('aria-expanded', 'true'); menuButton.setAttribute('aria-label', 'Close navigation'); menuButton.innerHTML = icon('x'); } });
 mobileNav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+document.addEventListener('click', event => {
+  if (!mobileNav.hidden && !event.target.closest('.site-header')) closeMenu();
+});
+document.addEventListener('focusin', event => {
+  if (!mobileNav.hidden && !event.target.closest('.site-header')) closeMenu();
+});
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && !mobileNav.hidden) { closeMenu(); menuButton.focus(); } });
-window.matchMedia('(min-width: 941px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+window.matchMedia('(min-width: 1051px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 
 const slider = document.querySelector('#shares');
 const shareVisual = document.querySelector('#share-visual');
