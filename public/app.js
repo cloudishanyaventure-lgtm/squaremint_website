@@ -122,7 +122,7 @@ document.addEventListener('click', event => {
   const download = event.target.closest('[data-download]');
   if (download) {
     const property = properties.find(p => p.id === download.dataset.download);
-    downloadText(`squaremin-${property.id}.txt`, `SQUAREMIN — ILLUSTRATIVE PROPERTY OVERVIEW\n\n${property.name}\n${property.location}, ${property.city}\n${property.badge}\n${property.price} ${property.unit}\n\n${property.description}\n\n${property.facts.map(([key, value]) => `${key}: ${value}`).join('\n')}\n\nThis is a concept listing, not a verified offer, title report, or investment document. Confirm pricing, availability, fees, legal documentation, and terms before making a decision.`);
+    downloadText(`squaremint-${property.id}.txt`, `SQUAREMINT — ILLUSTRATIVE PROPERTY OVERVIEW\n\n${property.name}\n${property.location}, ${property.city}\n${property.badge}\n${property.price} ${property.unit}\n\n${property.description}\n\n${property.facts.map(([key, value]) => `${key}: ${value}`).join('\n')}\n\nThis is a concept listing, not a verified offer, title report, or investment document. Confirm pricing, availability, fees, legal documentation, and terms before making a decision.`);
   }
 });
 document.querySelector('.saved-trigger').addEventListener('click', () => {
@@ -182,5 +182,5 @@ form.addEventListener('submit', async event => {
 });
 document.querySelector('#download-enquiry').addEventListener('click', () => {
   const data = enquiryData();
-  downloadText('squaremin-enquiry.txt', `SQUAREMIN — YOUR ENQUIRY\n\nName: ${data.name}\nEmail: ${data.email}\nPreferred city: ${data.city}\nInterest: ${{buy: 'Buying a home', fractional: 'Fractional ownership', rto: 'Rent-to-own'}[data.interest]}\n${data.property ? `Property: ${data.property}\n` : ''}\nThis file is a local copy. Downloading it does not submit the enquiry.`);
+  downloadText('squaremint-enquiry.txt', `SQUAREMINT — YOUR ENQUIRY\n\nName: ${data.name}\nEmail: ${data.email}\nPreferred city: ${data.city}\nInterest: ${{buy: 'Buying a home', fractional: 'Fractional ownership', rto: 'Rent-to-own'}[data.interest]}\n${data.property ? `Property: ${data.property}\n` : ''}\nThis file is a local copy. Downloading it does not submit the enquiry.`);
 });

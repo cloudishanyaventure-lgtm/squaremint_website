@@ -24,4 +24,4 @@ server.on('error', error => {
   console.error(error.code === 'EADDRINUSE' ? 'Port is already in use. Stop the other server or set PORT to a different value.' : `Could not start the local server: ${error.message}`);
   process.exitCode = 1;
 });
-server.listen(Number(process.env.PORT || 5173), '127.0.0.1', () => console.log('Squaremin: http://127.0.0.1:' + server.address().port));
+server.listen(Number(process.env.PORT || 5173), '127.0.0.1', () => console.log('Squaremint: http://127.0.0.1:' + server.address().port));
